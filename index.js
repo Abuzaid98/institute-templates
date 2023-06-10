@@ -3,13 +3,13 @@ const searchInput = document.querySelector(".search-input")
 const searchBtn = document.querySelector(".search-btn")
 const closeBtn = document.querySelector(".close-btn")
 const navLink = document.querySelectorAll(".nav-link")
- 
+   
 searchBtn.addEventListener("click", function () {
     console.log("hello")
     if (searchMobile.classList.contains("active")) {
         searchInput.value = ""
         searchMobile.classList.remove("active")
-    }
+    } 
     else {
         searchInput.focus()
         searchMobile.classList.add("active")
